@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#080a18" />
+    <meta name="description" content="Demo interactiva de Show up, videojuegos educativos competitivos para el aula." />
+    <title>Show up · Demo interactiva</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="refinements.css" />
+  </head>
+  <body>
+    <a class="skip" href="#app">Saltar al juego</a>
+    <div class="app-bg" aria-hidden="true"></div>
+    <header class="app-header">
+      <a class="app-logo" href="../" aria-label="Volver a la landing de Show up"><i>▲</i><span>SHOW <b>UP</b></span></a>
+      <div class="demo-badge"><span></span><b data-i18n="demo">Modo demostración</b></div>
+      <div class="header-actions">
+        <label class="lang-label"><span data-i18n="language">Idioma</span><select id="language" aria-label="Idioma"><option value="es">ES</option><option value="ca">CA</option></select></label>
+        <button class="icon-button hidden" id="home-action" title="Inicio" aria-label="Volver al inicio">⌂</button>
+      </div>
+    </header>
+
+    <main id="app" tabindex="-1"></main>
+    <div id="modal-root"></div>
+    <div id="toast" class="toast" role="status" aria-live="polite"></div>
+
+    <noscript>Esta demostración necesita JavaScript para ejecutar los minijuegos.</noscript>
+    <script type="module" src="app.js"></script>
+  </body>
+</html>
